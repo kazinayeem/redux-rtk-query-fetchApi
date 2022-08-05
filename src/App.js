@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetContactApiQuery } from "./contactApi";
 import Todo from "./Todo";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Country from "./Country";
 const App = () => {
   const { data, error, isLoading, isFetching } = useGetContactApiQuery();

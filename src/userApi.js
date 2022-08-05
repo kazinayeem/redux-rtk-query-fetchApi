@@ -7,7 +7,11 @@ export const CountryApi = createApi({
     getCountryApi: builder.query({
       query: () => "all",
     }),
+
+    getCountryByName : builder.query({
+        query : (name) => `name/${name}`
+    })
   }),
 });
 
-export const {  useGetCountryApiQuery} = CountryApi;
+export const {  useGetCountryApiQuery,useGetCountryByNameQuery} = CountryApi;
